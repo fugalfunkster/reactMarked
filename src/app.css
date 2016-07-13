@@ -1,11 +1,18 @@
-.in {
-  margin: 20;
-  display: 'block';
-  float: 'left';
-  height: 400;
-  width: 400;
+h1 {
+  text-align: center;
 }
 
-.out {
-  float: 'left';
+.app {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.textBox {
+  margin: 5%;
+  width: 40%;
+  height: 200px;
+  padding: 2px 5px;
+  border: 2px solid black;
+
 }

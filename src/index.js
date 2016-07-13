@@ -5,7 +5,7 @@ import marked from 'marked';
 
 const App = React.createClass({
   getInitialState: function () {
-    return { text: '' };
+    return { text: '# Type your markup in here!' };
   },
   onInputChange: function (e) { 
     return this.setState({text: e.target.value});
@@ -15,12 +15,13 @@ const App = React.createClass({
   },
   render: function () {
     return (
-      <div>
-        <textarea className={styles.in} value={this.state.text} onChange={this.onInputChange}></textarea>
-        <div className={styles.out} dangerouslySetInnerHTML={this.mark()}  />
+      <div className={styles.app}>
+        <textarea className={styles.textBox} value={this.state.text} onChange={this.onInputChange}>
+        </textarea>
+        <div className={styles.textBox} dangerouslySetInnerHTML={this.mark()}  />
       </div>
     );
   }
 });
   
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App/>, document.getElementById('app'));
