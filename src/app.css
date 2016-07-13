@@ -1,0 +1,11 @@
+.in {
+  margin: 20;
+  display: 'block';
+  float: 'left';
+  height: 400;
+  width: 400;
+}
+
+.out {
+  float: 'left';
+}
